@@ -1,0 +1,100 @@
+html,
+body {
+	font-family: 'Luckiest Guy', cursive;
+	color: #EDF2F4;
+	font-size: 40px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: absolute;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	margin: 10px 60px;
+	text-decoration: none;
+}
+
+.nav-btn:link,
+.nav-btn:visited {
+	text-decoration: none;
+	color: #EDF2F4;
+	transition: border .3s;
+	padding: 5px 0;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+    color: #EDF2F4;
+    border-bottom: 2px solid #EDF2F4;
+}
+
+
+#trainer {
+	height: 970px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(gym.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#moltres {
+	height: 970px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(moltres.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#suicune {
+	height: 970px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(suicune.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#ho-oh {
+	height: 970px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(ho-oh.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
