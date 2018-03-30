@@ -33,6 +33,17 @@ nav {
 	text-decoration: none;
 }
 
+.pokemon-ul {
+	border: 2px solid #EDF2F4;
+	padding: 30px;
+	border-radius: 10px;
+	margin-left: 340px;
+}
+
+.pokemon-ul li {
+	list-style: none;
+}
+
 .nav-btn:link,
 .nav-btn:visited {
 	text-decoration: none;
@@ -51,8 +62,8 @@ nav {
 #trainer {
 	height: 970px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: left;
 	align-items: center;
 	background: url(gym.png);
 	background-attachment: fixed;
@@ -64,8 +75,8 @@ nav {
 #moltres {
 	height: 970px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: left;
 	align-items: center;
 	background: url(moltres.jpg);
 	background-attachment: fixed;
@@ -74,11 +85,29 @@ nav {
 	background-position: center;
 }
 
+
+.moltres-name {
+	margin-bottom: 30px;
+}
+
+.moltres-hp-value {
+	margin-bottom: 30px;
+}
+
+.moltres-attack-value {
+	margin-bottom: 30px;
+}
+
+.moltres-defense-value {
+	margin-bottom: 30px;
+}
+
+
 #suicune {
 	height: 970px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: left;
 	align-items: center;
 	background: url(suicune.jpg);
 	background-attachment: fixed;
@@ -87,11 +116,27 @@ nav {
 	background-position: center;
 }
 
+.suicune-name {
+	margin-bottom: 30px;
+}
+
+.suicune-hp-value {
+	margin-bottom: 30px;
+}
+
+.suicune-attack-value {
+	margin-bottom: 30px;
+}
+
+.suicune-defense-value {
+	margin-bottom: 30px;
+}
+
 #ho-oh {
 	height: 970px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: left;
 	align-items: center;
 	background: url(ho-oh.jpg);
 	background-attachment: fixed;
@@ -100,3 +145,21 @@ nav {
 	background-position: center;
 
 }
+
+.ho-oh-name {
+	margin-bottom: 30px;
+}
+
+.ho-oh-hp-value {
+	margin-bottom: 30px;
+}
+
+.ho-oh-attack-value {
+	margin-bottom: 30px;
+}
+
+.ho-oh-defense-value {
+	margin-bottom: 30px;
+}
+
+

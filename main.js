@@ -39,8 +39,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 	let attackValue = document.querySelector(".moltres-attack-value")
 	let defense = document.querySelector(".moltres-defense")
 	let defenseValue = document.querySelector(".moltres-defense-value")
-	let abilitiesFirst = document.querySelector(".moltres-abilities1")
-	let abilitiesSecond = document.querySelector(".moltres-abilities2")
+	let ability = document.querySelector(".moltres-ability")
 
 
 	let moltres = new Pokemon (
@@ -51,8 +50,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 			data.stats[4].base_stat,
 			data.stats[3].stat.name,
 			data.stats[3].base_stat,
-			data.abilities[0].ability.name,
-			data.abilities[1].ability.name
+			data.abilities[0].ability.name
 
 		)
 
@@ -66,8 +64,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 		attackValue.innerHTML = data.stats[4].base_stat
 		defense.innerHTML = data.stats[3].stat.name
 		defenseValue.innerHTML = data.stats[3].base_stat
-		abilitiesFirst.innerHTML = data.abilities[0].ability.name
-		abilitiesSecond.innerHTML = data.abilities[1].ability.name
+		ability.innerHTML = data.abilities[0].ability.name
+	
  
 
 
@@ -86,8 +84,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 	let attackValue = document.querySelector(".suicune-attack-value")
 	let defense = document.querySelector(".suicune-defense")
 	let defenseValue = document.querySelector(".suicune-defense-value")
-	let abilitiesFirst = document.querySelector(".suicune-abilities1")
-	let abilitiesSecond = document.querySelector(".suicune-abilities2")
+	let ability = document.querySelector(".suicune-ability")
 
 
 	let suicune = new Pokemon (
@@ -98,8 +95,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 			data.stats[4].base_stat,
 			data.stats[3].stat.name,
 			data.stats[3].base_stat,
-			data.abilities[0].ability.name,
-			data.abilities[1].ability.name
+			data.abilities[0].ability.name
 
 		)
 
@@ -113,8 +109,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 		attackValue.innerHTML = data.stats[4].base_stat
 		defense.innerHTML = data.stats[3].stat.name
 		defenseValue.innerHTML = data.stats[3].base_stat
-		abilitiesFirst.innerHTML = data.abilities[0].ability.name
-		abilitiesSecond.innerHTML = data.abilities[1].ability.name
+		ability.innerHTML = data.abilities[0].ability.name
  
 
 
@@ -134,8 +129,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 	let attackValue = document.querySelector(".ho-oh-attack-value")
 	let defense = document.querySelector(".ho-oh-defense")
 	let defenseValue = document.querySelector(".ho-oh-defense-value")
-	let abilitiesFirst = document.querySelector(".ho-oh-abilities1")
-	let abilitiesSecond = document.querySelector(".ho-oh-abilities2")
+	let ability = document.querySelector(".ho-oh-ability")
+	
 
 
 	let hoOh = new Pokemon (
@@ -146,8 +141,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 			data.stats[4].base_stat,
 			data.stats[3].stat.name,
 			data.stats[3].base_stat,
-			data.abilities[0].ability.name,
-			data.abilities[1].ability.name
+			data.abilities[0].ability.name
 
 		)
 
@@ -161,8 +155,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 		attackValue.innerHTML = data.stats[4].base_stat
 		defense.innerHTML = data.stats[3].stat.name
 		defenseValue.innerHTML = data.stats[3].base_stat
-		abilitiesFirst.innerHTML = data.abilities[0].ability.name
-		abilitiesSecond.innerHTML = data.abilities[1].ability.name
+		ability.innerHTML = data.abilities[0].ability.name
+		
  
 
 
