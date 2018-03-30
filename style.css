@@ -27,7 +27,7 @@ nav {
 	list-style: none;
 }
 
-li {
+.nav-li {
 	display: inline-block;
 	margin: 10px 60px;
 	text-decoration: none;
