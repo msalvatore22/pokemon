@@ -37,12 +37,25 @@ nav {
 	border: 2px solid #EDF2F4;
 	padding: 30px;
 	border-radius: 10px;
-	margin-left: 340px;
+	margin: 0px 100px 0px 330px;
 }
+
+.pokemon-ul-big {
+	border: 2px solid #EDF2F4;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 0px 160px 0px 280px;
+}
+
 
 .pokemon-ul li {
 	list-style: none;
 }
+.pokemon-ul-big li {
+	list-style: none;
+}
+
+
 
 .nav-btn:link,
 .nav-btn:visited {
@@ -85,6 +98,9 @@ nav {
 	background-position: center;
 }
 
+#moltresImg {
+	
+}
 
 .moltres-name {
 	margin-bottom: 30px;

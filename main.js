@@ -1,6 +1,5 @@
 let ul = document.querySelector("ul")
 
-
 class Trainer {
 	constructor() {
 		this.all = []
@@ -40,7 +39,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 	let defense = document.querySelector(".moltres-defense")
 	let defenseValue = document.querySelector(".moltres-defense-value")
 	let ability = document.querySelector(".moltres-ability")
-
+	document.getElementById("moltresImg").src = "Moltres.png"
 
 	let moltres = new Pokemon (
 			data.name,
@@ -65,8 +64,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 		defense.innerHTML = data.stats[3].stat.name
 		defenseValue.innerHTML = data.stats[3].base_stat
 		ability.innerHTML = data.abilities[0].ability.name
-	
- 
 
 
 }).catch((error) => {
@@ -85,7 +82,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 	let defense = document.querySelector(".suicune-defense")
 	let defenseValue = document.querySelector(".suicune-defense-value")
 	let ability = document.querySelector(".suicune-ability")
-
+	document.getElementById("suicuneImg").src = "Suicune.png"
 
 	let suicune = new Pokemon (
 			data.name,
@@ -130,7 +127,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 	let defense = document.querySelector(".ho-oh-defense")
 	let defenseValue = document.querySelector(".ho-oh-defense-value")
 	let ability = document.querySelector(".ho-oh-ability")
-	
+	document.getElementById("hoOhImg").src = "Ho-Oh.png"
 
 
 	let hoOh = new Pokemon (
