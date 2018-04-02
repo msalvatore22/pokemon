@@ -7,26 +7,35 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 	<header>
-		<nav>
+		<nav class="vertical-nav">
 			<ul>
-				<li class="nav-li"><a class="nav-btn" href="#trainer">trainer</a></li>
-				<li class="nav-li"><a class="nav-btn" href="#moltres">moltres</a></li>
-				<li class="nav-li"><a class="nav-btn" href="#suicune">suicune</a></li>
-				<li class="nav-li"><a class="nav-btn" href="#ho-oh">ho-oh</a></li>
+				<li><a href="#trainer"><img src="trainer.png"></a></li>
+				<li><a href="#moltres"><img src="Moltres.png"></a></li>
+				<li><a href="#suicune"><img src="Suicune.png"></a></li>
+				<li><a href="#ho-oh"><img src="Ho-Oh.png"></a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
-<!-- name, hp, attack, defense, abilities
- -->		<section id="trainer">
+	<main>	
+		<section id="trainer">
  			
 			<img src="trainer.png">
-	
+			<div>
+				<h1>Hi, I'm Zardchar</h1>
+				<h2>Welcome to my gym</h2>
+				<nav>
+					<ul>
+						<li class="nav-li"><a class="nav-btn-moltres" href="#moltres">moltres</a></li>
+						<li class="nav-li"><a class="nav-btn-suicune" href="#suicune">suicune</a></li>
+						<li class="nav-li"><a class="nav-btn-ho-oh" href="#ho-oh">ho-oh</a></li>
+					</ul>
+				</nav>
+			</div>
 		</section>
 
 		<section id="moltres">
-			<ul class="pokemon-ul">
+			<ul class="moltres-ul">
 				<li class="moltres-name"></li>
 				<li class="moltres-hp"></li>
 				<li class="moltres-hp-value"></li>
@@ -42,7 +51,7 @@
 		</section>
 		
 		<section id="suicune">
-			<ul class="pokemon-ul-big">	
+			<ul class="suicune-ul">	
 				<li class="suicune-name"></li>
 				<li class="suicune-hp"></li>
 				<li class="suicune-hp-value"></li>
@@ -60,7 +69,7 @@
 		</section>
 		
 		<section id="ho-oh">
-			<ul class="pokemon-ul-big">	
+			<ul class="ho-oh-ul">	
 				<li class="ho-oh-name"></li>
 				<li class="ho-oh-hp"></li>
 				<li class="ho-oh-hp-value"></li>

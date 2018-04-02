@@ -166,49 +166,16 @@ axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 }).catch((error) => {
   console.log(error)
 })
-// axios.get("https://pokeapi.co/api/v2/pokemon/245").then((response) => {
-// 	let data = response.data
-// 	let trainer = new Trainer()
 
-// 	data.forEach((item) => {
-// 		let section = document.querySelector("#suicune")
-// 		let li = document.createElement("li")
+window.addEventListener("scroll", (event) => {
+	let showNav = document.querySelectorAll(".vertical-nav")
+	let scrollToShow = showNav[0]
 
-// 		let suicune = new Pokemon (
-// 			item.forms[146].name
-// 		)
-		
+	if(window.scrollY > 900){
+		scrollToShow.classList.add("show")
+	} else { 
+		scrollToShow.classList.remove("show")
 
-// 		trainer.add(suicune)
-// 		li.innerHTML = item.forms[146].name
+	}
 
-// 		section.appendChild(ul)
-// 		ul.appendChild(li)
-// 	})
-
-// }).catch((error) => {
-//   console.log(error)
-// })
-
-// axios.get("https://pokeapi.co/api/v2/pokemon/250").then((response) => {
-// 	let data = response.data
-// 	let trainer = new Trainer()
-
-// 	data.forEach((item) => {
-// 		let section = document.querySelector("#ho-oh")
-// 		let li = document.createElement("li")
-
-// 		let hoOh = new Pokemon (
-// 			item.forms[146].name
-// 		)
-
-// 		trainer.add(hoOh)
-// 		li.innerHTML = item.forms[146].name
-
-// 		section.appendChild(ul)
-// 		ul.appendChild(li)
-// 	})
-
-// }).catch((error) => {
-//   console.log(error)
-// })
+});

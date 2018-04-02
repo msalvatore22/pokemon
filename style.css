@@ -1,3 +1,5 @@
+/*--- General Setup ---*/
+
 html,
 body {
 	font-family: 'Luckiest Guy', cursive;
@@ -11,13 +13,13 @@ body {
 	padding: 0;
 }
 
-header {
-	position: absolute;
-	background-color: transparent;
-	margin: 0;
+ul {
 	padding: 0;
-	width: 100%;
 }
+
+
+/*--- Pokemon Nav ---*/
+
 
 nav {
 	display: flex;
@@ -27,49 +29,116 @@ nav {
 	list-style: none;
 }
 
+
 .nav-li {
 	display: inline-block;
-	margin: 10px 60px;
+	margin: 10px 10px;
 	text-decoration: none;
+	font-size: 60%;
 }
 
-.pokemon-ul {
-	border: 2px solid #EDF2F4;
-	padding: 30px;
-	border-radius: 10px;
-	margin: 0px 100px 0px 330px;
-}
-
-.pokemon-ul-big {
-	border: 2px solid #EDF2F4;
-	padding: 30px;
-	border-radius: 10px;
-	margin: 0px 160px 0px 280px;
-}
-
-
-.pokemon-ul li {
-	list-style: none;
-}
-.pokemon-ul-big li {
-	list-style: none;
-}
-
-
-
-.nav-btn:link,
-.nav-btn:visited {
+.nav-btn-moltres:link,
+.nav-btn-moltres:visited {
 	text-decoration: none;
 	color: #EDF2F4;
 	transition: border .3s;
 	padding: 5px 0;
 }
 
-.nav-btn:hover,
-.nav-btn:active {
-    color: #EDF2F4;
-    border-bottom: 2px solid #EDF2F4;
+.nav-btn-moltres:hover,
+.nav-btn-moltres:active {
+    color: #FED766;
+    border-bottom: 2px solid #FED766;
 }
+
+.nav-btn-suicune:link,
+.nav-btn-suicune:visited {
+	text-decoration: none;
+	color: #EDF2F4;
+	transition: border .3s;
+	padding: 5px 0;
+}
+
+.nav-btn-suicune:hover,
+.nav-btn-suicune:active {
+    color: #A4CEFF;
+    border-bottom: 2px solid #A4CEFF;
+}
+
+.nav-btn-ho-oh:link,
+.nav-btn-ho-oh:visited {
+	text-decoration: none;
+	color: #EDF2F4;
+	transition: border .3s;
+	padding: 5px 0;
+}
+
+.nav-btn-ho-oh:hover,
+.nav-btn-ho-oh:active {
+    color: #E52C20;
+    border-bottom: 2px solid #E52C20;
+}
+
+.moltres-ul li {
+	list-style: none;
+}
+.suicune-ul li {
+	list-style: none;
+}
+.ho-oh-ul li {
+	list-style: none;
+}
+
+/*--- Vertical Nav ---*/
+
+header {
+	height: 0;
+	width: 0;
+}
+
+@keyframes fadeIn{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+
+.vertical-nav {
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+.show {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	list-style: none;
+	background-color: transparent;
+	position: fixed;
+	margin: 260px 20px;
+	padding: 0;
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;	
+}
+
+.show img {
+	height: 60px;
+	width: 60px;
+}
+
+.show li {
+	margin-bottom: 30px;
+	list-style: none;
+}
+
+
+
+/*--- Trainer Section ---*/
+
+
 
 
 #trainer {
@@ -78,11 +147,27 @@ nav {
 	flex-direction: row;
 	justify-content: left;
 	align-items: center;
-	background: url(gym.png);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(gym.png);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+#trainer div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 60px;
+}
+
+#trainer div h1 {
+	margin-bottom: 30px;
+}
+
+#trainer div h2 {
+	font-size: 100%;
+	margin-bottom: 0px;
 }
 
 #trainer img {
@@ -91,7 +176,7 @@ nav {
 	margin-left: 360px;
 }
 
-
+/*--- Moltres Section ---*/
 
 
 #moltres {
@@ -107,7 +192,13 @@ nav {
 	background-position: center;
 }
 
-
+.moltres-ul {
+	border: 4px solid #A20021;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 0px 100px 0px 330px;
+	color: #A20021;
+}
 
 .moltres-name {
 	margin-bottom: 30px;
@@ -125,6 +216,7 @@ nav {
 	margin-bottom: 30px;
 }
 
+/*--- Suicune Section ---*/
 
 #suicune {
 	height: 970px;
@@ -137,6 +229,14 @@ nav {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.suicune-ul {
+	border: 4px solid #9777A7;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 0px 160px 0px 280px;
+	color: #9777A7;
 }
 
 .suicune-name {
@@ -155,6 +255,8 @@ nav {
 	margin-bottom: 30px;
 }
 
+/*--- Ho-oh Section ---*/
+
 #ho-oh {
 	height: 970px;
 	display: flex;
@@ -166,7 +268,14 @@ nav {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
 
+.ho-oh-ul {
+	border: 4px solid #6EEB83;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 0px 160px 0px 280px;
+	color: #6EEB83;
 }
 
 .ho-oh-name {
@@ -184,5 +293,3 @@ nav {
 .ho-oh-defense-value {
 	margin-bottom: 30px;
 }
-
-
