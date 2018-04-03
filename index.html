@@ -3,93 +3,102 @@
 <head>
 	<title>Zardchar</title>
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="icon" href="pokeball.png">
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 	<header>
-		<nav class="vertical-nav">
+		<div class="vertical-nav">
 			<ul>
 				<li><a href="#trainer"><img src="trainer.png"></a></li>
 				<li><a href="#moltres"><img src="Moltres.png"></a></li>
 				<li><a href="#suicune"><img src="Suicune.png"></a></li>
 				<li><a href="#ho-oh"><img src="Ho-Oh.png"></a></li>
 			</ul>
-		</nav>
+		</div>
 	</header>
 
 	<main>	
-		<section id="trainer">
- 			
-			<img src="trainer.png">
-			<div>
+		<section id="trainer" class="row">
+ 			<div class="col s6">
+				<img src="trainer.png">
+			</div>
+			<div class="col s6">
 				<h1>Hi, I'm Zardchar</h1>
 				<h2>Welcome to my gym</h2>
-				<nav>
 					<ul>
 						<li class="nav-li"><a class="nav-btn-moltres" href="#moltres">moltres</a></li>
 						<li class="nav-li"><a class="nav-btn-suicune" href="#suicune">suicune</a></li>
 						<li class="nav-li"><a class="nav-btn-ho-oh" href="#ho-oh">ho-oh</a></li>
 					</ul>
-				</nav>
 			</div>
 		</section>
 
-		<section id="moltres">
-			<ul class="moltres-ul">
-				<li class="moltres-name"></li>
-				<li class="moltres-hp"></li>
-				<li class="moltres-hp-value"></li>
-				<li class="moltres-attack"></li>
-				<li class="moltres-attack-value"></li>
-				<li class="moltres-defense"></li>
-				<li class="moltres-defense-value"></li>
-				<li>abilities</li>
-				<li class="moltres-ability-1"></li>
-				<li class="moltres-ability-2"></li>
-			</ul>
-			<img id="moltresImg">
+		<section id="moltres" class="row">
+			<div class="col s2 offset-s2">
+				<ul class="moltres-ul">
+					<li class="moltres-name"></li>
+					<li class="moltres-hp"></li>
+					<li class="moltres-hp-value"></li>
+					<li class="moltres-attack"></li>
+					<li class="moltres-attack-value"></li>
+					<li class="moltres-defense"></li>
+					<li class="moltres-defense-value"></li>
+					<li>abilities</li>
+					<li class="moltres-ability-1"></li>
+					<li class="moltres-ability-2"></li>
+				</ul>
+			</div>
+			<div class="col s6">
+				<img id="moltresImg">
+			</div>
 		</section>
 		
-		<section id="suicune">
-			<ul class="suicune-ul">	
-				<li class="suicune-name"></li>
-				<li class="suicune-hp"></li>
-				<li class="suicune-hp-value"></li>
-				<li class="suicune-attack"></li>
-				<li class="suicune-attack-value"></li>
-				<li class="suicune-defense"></li>
-				<li class="suicune-defense-value"></li>
-				<li>abilities</li>
-				<li class="suicune-ability-1"></li>
-				<li class="suicune-ability-2"></li>
-
-				
-			</ul>
-			<img id="suicuneImg">
+		<section id="suicune" class="row">
+			<div class="col s3 offset-s2">
+				<ul class="suicune-ul">	
+					<li class="suicune-name"></li>
+					<li class="suicune-hp"></li>
+					<li class="suicune-hp-value"></li>
+					<li class="suicune-attack"></li>
+					<li class="suicune-attack-value"></li>
+					<li class="suicune-defense"></li>
+					<li class="suicune-defense-value"></li>
+					<li>abilities</li>
+					<li class="suicune-ability-1"></li>
+					<li class="suicune-ability-2"></li>
+				</ul>
+			</div>
+			<div class="col s6">
+				<img id="suicuneImg">
+			</div>
 		</section>
 		
-		<section id="ho-oh">
-			<ul class="ho-oh-ul">	
-				<li class="ho-oh-name"></li>
-				<li class="ho-oh-hp"></li>
-				<li class="ho-oh-hp-value"></li>
-				<li class="ho-oh-attack"></li>
-				<li class="ho-oh-attack-value"></li>
-				<li class="ho-oh-defense"></li>
-				<li class="ho-oh-defense-value"></li>
-				<li>abilities</li>
-				<li class="ho-oh-ability-1"></li>
-				<li class="ho-oh-ability-2"></li>
-				
-			</ul>
-			<img id="hoOhImg">
+		<section id="ho-oh" class="row">
+			<div class="col s3 offset-s2">
+				<ul class="ho-oh-ul">	
+					<li class="ho-oh-name"></li>
+					<li class="ho-oh-hp"></li>
+					<li class="ho-oh-hp-value"></li>
+					<li class="ho-oh-attack"></li>
+					<li class="ho-oh-attack-value"></li>
+					<li class="ho-oh-defense"></li>
+					<li class="ho-oh-defense-value"></li>
+					<li>abilities</li>
+					<li class="ho-oh-ability-1"></li>
+					<li class="ho-oh-ability-2"></li>
+				</ul>
+			</div>
+			<div class="col s6">
+				<img id="hoOhImg">
+			</div>
 		</section>
 
 	</main>
-	<footer>
-		
-	</footer>
 
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 

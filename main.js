@@ -1,4 +1,4 @@
-let ul = document.querySelector("ul")
+
 
 class Trainer {
 	constructor() {
@@ -7,6 +7,9 @@ class Trainer {
 
 	add(pokemon) {
 		this.all.push(pokemon)
+	}
+	get(name){
+		
 	}
 }
 
@@ -19,12 +22,7 @@ class Pokemon {
 	this.abilities = abilities
 	
 	}
-	// render(){
-	// 	let section = document.createElement("section")
-	// 	let li = document.createElement("li")
-	// 	li.innerHTML = this.name + this.hp + this.attack + this.defense + this.abilities
-		
-	// }
+	
 }
 
 axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {

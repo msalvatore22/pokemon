@@ -5,7 +5,7 @@ body {
 	font-family: 'Luckiest Guy', cursive;
 	text-transform: uppercase;
 	color: #EDF2F4;
-	font-size: 40px;
+	font-size: 20px;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
 	letter-spacing: 2px;
@@ -21,20 +21,11 @@ ul {
 /*--- Pokemon Nav ---*/
 
 
-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-}
-
-
 .nav-li {
 	display: inline-block;
 	margin: 10px 10px;
 	text-decoration: none;
-	font-size: 60%;
+	font-size: 100%;
 }
 
 .nav-btn-moltres:link,
@@ -42,6 +33,7 @@ nav {
 	text-decoration: none;
 	color: #EDF2F4;
 	transition: border .3s;
+	border-bottom: 2px solid #EDF2F4;
 	padding: 5px 0;
 }
 
@@ -56,6 +48,7 @@ nav {
 	text-decoration: none;
 	color: #EDF2F4;
 	transition: border .3s;
+	border-bottom: 2px solid #EDF2F4;
 	padding: 5px 0;
 }
 
@@ -70,6 +63,7 @@ nav {
 	text-decoration: none;
 	color: #EDF2F4;
 	transition: border .3s;
+	border-bottom: 2px solid #EDF2F4;
 	padding: 5px 0;
 }
 
@@ -112,7 +106,7 @@ header {
 .show {
 	display: flex;
 	flex-direction: column;
-	justify-content: left;
+	justify-content: center;
 	list-style: none;
 	background-color: transparent;
 	position: fixed;
@@ -124,15 +118,17 @@ header {
 	animation-fill-mode: forwards;	
 }
 
+
 .show img {
 	height: 60px;
 	width: 60px;
 }
 
 .show li {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 	list-style: none;
 }
+
 
 
 
@@ -142,11 +138,8 @@ header {
 
 
 #trainer {
-	height: 970px;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: center;
+	height: 100vh;
+	margin: 0;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(gym.png);
 	background-attachment: fixed;
 	background-size: cover;
@@ -154,37 +147,27 @@ header {
 	background-position: center;
 }
 
-#trainer div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 60px;
-}
 
 #trainer div h1 {
 	margin-bottom: 30px;
 }
 
 #trainer div h2 {
-	font-size: 100%;
+	font-size: 200%;
 	margin-bottom: 0px;
 }
 
 #trainer img {
 	height: 600px;
 	width: 400px;
-	margin-left: 360px;
 }
 
 /*--- Moltres Section ---*/
 
 
 #moltres {
-	height: 970px;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: center;
+	height: 100vh;
+	margin: 0;
 	background: url(moltres.jpg);
 	background-attachment: fixed;
 	background-size: cover;
@@ -196,8 +179,13 @@ header {
 	border: 4px solid #A20021;
 	padding: 30px;
 	border-radius: 10px;
-	margin: 0px 100px 0px 330px;
 	color: #A20021;
+	font-size: 180%;
+	text-align: left;
+}
+
+.moltres-ul li {
+	margin-left: 10px;
 }
 
 .moltres-name {
@@ -219,11 +207,8 @@ header {
 /*--- Suicune Section ---*/
 
 #suicune {
-	height: 970px;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: center;
+	height: 100vh;
+	margin: 0;
 	background: url(suicune.jpg);
 	background-attachment: fixed;
 	background-size: cover;
@@ -235,8 +220,8 @@ header {
 	border: 4px solid #9777A7;
 	padding: 30px;
 	border-radius: 10px;
-	margin: 0px 160px 0px 280px;
 	color: #9777A7;
+	font-size: 200%;
 }
 
 .suicune-name {
@@ -258,11 +243,8 @@ header {
 /*--- Ho-oh Section ---*/
 
 #ho-oh {
-	height: 970px;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: center;
+	height: 100vh;
+	margin: 0;
 	background: url(ho-oh.jpg);
 	background-attachment: fixed;
 	background-size: cover;
@@ -274,8 +256,8 @@ header {
 	border: 4px solid #6EEB83;
 	padding: 30px;
 	border-radius: 10px;
-	margin: 0px 160px 0px 280px;
 	color: #6EEB83;
+	font-size: 200%;
 }
 
 .ho-oh-name {
