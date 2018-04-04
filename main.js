@@ -1,6 +1,4 @@
-
-
-class Trainer {
+class Zardchar {
 	constructor() {
 		this.all = []
 	}
@@ -27,7 +25,7 @@ class Pokemon {
 
 axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 	let data = response.data
-	let trainer = new Trainer()
+	let zardchar = new Zardchar()
 	let section = document.querySelector("#moltres")
 	let name = document.querySelector(".moltres-name")
 	let hp = document.querySelector(".moltres-hp")
@@ -53,7 +51,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 		)
 
 
-		trainer.add(moltres)
+		zardchar.add(moltres)
 
 		name.innerHTML = data.name
 		hp.innerHTML = data.stats[5].stat.name
@@ -71,7 +69,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 
 axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 	let data = response.data
-	let trainer = new Trainer()
+	let zardchar = new Zardchar()
 	let section = document.querySelector("#suicune")
 	let name = document.querySelector(".suicune-name")
 	let hp = document.querySelector(".suicune-hp")
@@ -98,7 +96,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 		)
 
 
-		trainer.add(suicune)
+		zardchar.add(suicune)
 
 		name.innerHTML = data.name
 		hp.innerHTML = data.stats[5].stat.name
@@ -119,7 +117,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 
 axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 	let data = response.data
-	let trainer = new Trainer()
+	let zardchar = new Zardchar()
 	let section = document.querySelector("#ho-oh")
 	let name = document.querySelector(".ho-oh-name")
 	let hp = document.querySelector(".ho-oh-hp")
@@ -147,7 +145,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 		)
 
 
-		trainer.add(hoOh)
+		zardchar.add(hoOh)
 
 		name.innerHTML = data.name
 		hp.innerHTML = data.stats[5].stat.name
