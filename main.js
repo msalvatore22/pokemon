@@ -7,7 +7,10 @@ class Zardchar {
 		this.all.push(pokemon)
 	}
 	get(name){
-		
+		// let getMoltres = this.all.filter(function(pokemonName){
+		// 	return pokemonName.name == "moltres";
+			
+		// })
 	}
 }
 

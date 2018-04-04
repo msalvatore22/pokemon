@@ -11,6 +11,12 @@ body {
 	letter-spacing: 2px;
 	margin: 0;
 	padding: 0;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	top: -20px;
 }
 
 ul {
@@ -129,13 +135,7 @@ header {
 	list-style: none;
 }
 
-
-
-
 /*--- Trainer Section ---*/
-
-
-
 
 #trainer {
 	height: 100vh;
@@ -144,9 +144,12 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 }
 
+
+.main-text {
+	margin-right: 300px;
+}
 
 #trainer div h1 {
 	margin-bottom: 30px;
@@ -172,36 +175,37 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .moltres-ul {
 	border: 4px solid #A20021;
-	padding: 30px;
+	padding: 10px;
 	border-radius: 10px;
 	color: #A20021;
 	font-size: 180%;
 	text-align: left;
+	background-color: rgba(162, 0, 33, 0.2)
 }
+
 
 .moltres-ul li {
 	margin-left: 10px;
 }
 
 .moltres-name {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .moltres-hp-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .moltres-attack-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .moltres-defense-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 /*--- Suicune Section ---*/
@@ -213,31 +217,36 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .suicune-ul {
 	border: 4px solid #9777A7;
-	padding: 30px;
+	padding: 10px;
 	border-radius: 10px;
 	color: #9777A7;
-	font-size: 200%;
+	font-size: 170%;
+	text-align: left;
+	background-color: rgba(151, 119, 167, 0.2);
+}
+
+.suicune-ul li {
+	margin-left: 10px;
 }
 
 .suicune-name {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .suicune-hp-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .suicune-attack-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .suicune-defense-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 /*--- Ho-oh Section ---*/
@@ -249,29 +258,34 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .ho-oh-ul {
 	border: 4px solid #6EEB83;
-	padding: 30px;
+	padding: 10px;
 	border-radius: 10px;
 	color: #6EEB83;
-	font-size: 200%;
+	font-size: 180%;
+	text-align: left;
+	background-color: rgba(110, 235, 131, 0.2);
+}
+
+.ho-oh-ul li {
+	margin-left: 10px;
 }
 
 .ho-oh-name {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .ho-oh-hp-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .ho-oh-attack-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .ho-oh-defense-value {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
