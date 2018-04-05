@@ -7,9 +7,15 @@ class Zardchar {
 		this.all.push(pokemon)
 	}
 	get(name){
-		
+		for (let i = 0; i < this.all.length; i++){
+			if(name == this.all[i].name){
+				return this.all[i]
+			}
+		}
 	}
 }
+
+let zardchar = new Zardchar()
 
 class Pokemon {
 	constructor(name, hp, attack, defense, abilities){
@@ -18,14 +24,11 @@ class Pokemon {
 	this.attack = attack
 	this.defense = defense
 	this.abilities = abilities
-	
-	}
-	
+	}	
 }
 
 axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 	let data = response.data
-	let zardchar = new Zardchar()
 	let section = document.querySelector("#moltres")
 	let name = document.querySelector(".moltres-name")
 	let hp = document.querySelector(".moltres-hp")
@@ -69,7 +72,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/146/").then((response) => {
 
 axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 	let data = response.data
-	let zardchar = new Zardchar()
 	let section = document.querySelector("#suicune")
 	let name = document.querySelector(".suicune-name")
 	let hp = document.querySelector(".suicune-hp")
@@ -117,7 +119,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/245/").then((response) => {
 
 axios.get("https://pokeapi.co/api/v2/pokemon/250/").then((response) => {
 	let data = response.data
-	let zardchar = new Zardchar()
 	let section = document.querySelector("#ho-oh")
 	let name = document.querySelector(".ho-oh-name")
 	let hp = document.querySelector(".ho-oh-hp")

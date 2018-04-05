@@ -41,7 +41,8 @@ ul {
 	transition: border .3s;
 	border: 2px solid #EDF2F4;
 	border-radius: 10px;
-	padding: 10px 15px;
+	padding: 15px 15px 10px 15px;
+	font-family: 'Luckiest Guy', cursive;
 }
 
 .nav-btn-moltres:focus {
@@ -52,7 +53,7 @@ ul {
 	transition: border .3s;
 	border: 2px solid #EDF2F4;
 	border-radius: 10px;
-	padding: 10px 15px;
+	padding: 15px 15px 10px 15px;
 }
 
 .nav-btn-moltres:hover {
@@ -70,7 +71,7 @@ ul {
 	transition: border .3s;
 	border: 2px solid #EDF2F4;
 	border-radius: 10px;
-	padding: 10px 15px;
+	padding: 15px 15px 10px 15px;
 }
 
 .nav-btn-suicune:hover {
@@ -88,7 +89,7 @@ ul {
 	transition: border .3s;
 	border: 2px solid #EDF2F4;
 	border-radius: 10px;
-	padding: 10px 15px;
+	padding: 15px 15px 10px 15px;
 }
 
 .nav-btn-ho-oh:hover {
