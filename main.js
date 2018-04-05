@@ -175,3 +175,46 @@ window.addEventListener("scroll", (event) => {
 	}
 
 });
+
+
+
+
+
+document.querySelector(".nav-btn-moltres").addEventListener('click', (event) => {
+	let section = document.getElementById("moltres")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".nav-btn-suicune").addEventListener('click', (event) => {
+	let section = document.getElementById("suicune")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".nav-btn-ho-oh").addEventListener('click', (event) => {
+	let section = document.getElementById("ho-oh")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".vertical-trainer").addEventListener('click', (event) => {
+	let section = document.getElementById("trainer")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".vertical-moltres").addEventListener('click', (event) => {
+	let section = document.getElementById("moltres")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".vertical-suicune").addEventListener('click', (event) => {
+	let section = document.getElementById("suicune")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".vertical-ho-oh").addEventListener('click', (event) => {
+	let section = document.getElementById("ho-oh")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+
+
+

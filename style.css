@@ -16,7 +16,6 @@ body {
 
 body {
 	position: relative;
-	top: -20px;
 }
 
 ul {
@@ -34,38 +33,69 @@ ul {
 	font-size: 150%;
 }
 
-.nav-btn:link,
-.nav-btn:visited {
+.nav-btn {
 	text-decoration: none;
 	color: #EDF2F4;
+	cursor: pointer;
+	background-color: transparent;
 	transition: border .3s;
 	border: 2px solid #EDF2F4;
 	border-radius: 10px;
-	padding: 15px 15px 10px 15px;
-	transition: border 0.2s, color 0.2s, background-color 0.2s;
+	padding: 10px 15px;
 }
 
-.nav-btn-moltres:hover,
-.nav-btn-moltres:active {
+.nav-btn-moltres:focus {
+	text-decoration: none;
+	color: #EDF2F4;
+	cursor: pointer;
+	background-color: transparent;
+	transition: border .3s;
+	border: 2px solid #EDF2F4;
+	border-radius: 10px;
+	padding: 10px 15px;
+}
+
+.nav-btn-moltres:hover {
     color: #FED766;
     border: 2px solid #FED766;
     background-color: rgba(162, 0, 33, 0.5);
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
 }
 
+.nav-btn-suicune:focus {
+	text-decoration: none;
+	color: #EDF2F4;
+	cursor: pointer;
+	background-color: transparent;
+	transition: border .3s;
+	border: 2px solid #EDF2F4;
+	border-radius: 10px;
+	padding: 10px 15px;
+}
 
-
-.nav-btn-suicune:hover,
-.nav-btn-suicune:active {
+.nav-btn-suicune:hover {
     color: #A4CEFF;
     border: 2px solid #A4CEFF;
     background-color: rgba(151, 119, 167, 0.5);
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
 }
 
-.nav-btn-ho-oh:hover,
-.nav-btn-ho-oh:active {
+.nav-btn-ho-oh:focus {
+	text-decoration: none;
+	color: #EDF2F4;
+	cursor: pointer;
+	background-color: transparent;
+	transition: border .3s;
+	border: 2px solid #EDF2F4;
+	border-radius: 10px;
+	padding: 10px 15px;
+}
+
+.nav-btn-ho-oh:hover {
     color: #E52C20;
     border: 2px solid #E52C20;
     background-color: rgba(243, 202, 64, 0.5);
+    transition: color 0.2s, background-color 0.2s;
 }
 
 
@@ -91,6 +121,7 @@ header {
 
 .show {
 	display: flex;
+	cursor: pointer;
 	flex-direction: column;
 	justify-content: center;
 	list-style: none;
@@ -313,6 +344,7 @@ header {
 
 	.nav-li {
 	font-size: 60%;
+	margin: 30px;
 	}
 
 #trainer div h1 {
@@ -336,4 +368,5 @@ header {
 .ho-oh-ul {
 	font-size: 100%;
 }
+
 
