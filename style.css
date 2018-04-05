@@ -29,54 +29,43 @@ ul {
 
 .nav-li {
 	display: inline-block;
-	margin: 10px 10px;
+	margin: 40px 40px;
 	text-decoration: none;
-	font-size: 100%;
+	font-size: 150%;
 }
 
-.nav-btn-moltres:link,
-.nav-btn-moltres:visited {
+.nav-btn:link,
+.nav-btn:visited {
 	text-decoration: none;
 	color: #EDF2F4;
 	transition: border .3s;
-	border-bottom: 2px solid #EDF2F4;
-	padding: 5px 0;
+	border: 2px solid #EDF2F4;
+	border-radius: 10px;
+	padding: 15px 15px 10px 15px;
+	transition: border 0.2s, color 0.2s, background-color 0.2s;
 }
 
 .nav-btn-moltres:hover,
 .nav-btn-moltres:active {
     color: #FED766;
-    border-bottom: 2px solid #FED766;
+    border: 2px solid #FED766;
+    background-color: rgba(162, 0, 33, 0.5);
 }
 
-.nav-btn-suicune:link,
-.nav-btn-suicune:visited {
-	text-decoration: none;
-	color: #EDF2F4;
-	transition: border .3s;
-	border-bottom: 2px solid #EDF2F4;
-	padding: 5px 0;
-}
+
 
 .nav-btn-suicune:hover,
 .nav-btn-suicune:active {
     color: #A4CEFF;
-    border-bottom: 2px solid #A4CEFF;
-}
-
-.nav-btn-ho-oh:link,
-.nav-btn-ho-oh:visited {
-	text-decoration: none;
-	color: #EDF2F4;
-	transition: border .3s;
-	border-bottom: 2px solid #EDF2F4;
-	padding: 5px 0;
+    border: 2px solid #A4CEFF;
+    background-color: rgba(151, 119, 167, 0.5);
 }
 
 .nav-btn-ho-oh:hover,
 .nav-btn-ho-oh:active {
     color: #E52C20;
-    border-bottom: 2px solid #E52C20;
+    border: 2px solid #E52C20;
+    background-color: rgba(243, 202, 64, 0.5);
 }
 
 
@@ -132,29 +121,27 @@ header {
 	height: 100vh;
 	margin: 0;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(gym.png);
+	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 
-.main-text {
-	margin-right: 300px;
-}
 
 #trainer div h1 {
 	margin-bottom: 30px;
+	font-size: 400%;
 }
 
 #trainer div h2 {
-	font-size: 200%;
+	font-size: 250%;
 	margin-bottom: 0px;
 }
 
-#trainer img {
-	height: 600px;
-	width: 400px;
-}
+
+
+
 
 /*--- Moltres Section ---*/
 
@@ -162,7 +149,8 @@ header {
 #moltres {
 	height: 100vh;
 	margin: 0;
-	background: url(moltres.jpg);
+	background-image: url(moltres.jpg);
+	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -175,12 +163,10 @@ header {
 	color: #FED766;
 	font-size: 180%;
 	text-align: left;
-	background-color: rgba(162, 0, 33, 0.5)
+	background-color: rgba(162, 0, 33, 0.5);
 }
 
 #moltres img {
-	height: 400px;
-	width: 400px;
 	padding-right: 30px;
 }
 
@@ -222,6 +208,7 @@ header {
 	height: 100vh;
 	margin: 0;
 	background: url(suicune.jpg);
+	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -270,6 +257,7 @@ header {
 	height: 100vh;
 	margin: 0;
 	background: url(ho-oh.jpg);
+	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -311,5 +299,41 @@ header {
 
 .ho-oh-ability-1 {
 	display: inline-block;
+}
+
+
+/* Small phones: from 0 to 480px */
+
+
+@media (max-width: 480px) {
+	body{
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav-li {
+	font-size: 60%;
+	}
+
+#trainer div h1 {
+	font-size: 120%;
+}
+
+#trainer div h2 {
+	font-size: 110%;
+	
+}
+
+
+.moltres-ul {
+	font-size: 100%;
+}
+
+.suicune-ul {
+	font-size: 100%;
+}
+
+.ho-oh-ul {
+	font-size: 100%;
 }
 
