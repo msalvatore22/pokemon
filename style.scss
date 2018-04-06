@@ -1,0 +1,356 @@
+/*--- Colors ---*/
+
+$white: #EDF2F4;
+$light-yellow: #FED766;
+$dark-red: #A20021;
+$red: #E52C20;
+$blue: #A4CEFF;
+$purple: #8152A5;
+$bright-yellow: #F3CA40;
+$black: #2C2C2C;
+
+
+
+/*--- Placeholders ---*/
+
+%bg-image {
+	height: 100vh;
+	margin: 0;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+%btn-focus {
+	text-decoration: none;
+	color: $white;
+	cursor: pointer;
+	background-color: transparent;
+	transition: border .3s;
+	border: 4px solid $white;
+	border-radius: 10px;
+	padding: 15px 15px 10px 15px;
+}
+
+%ul-layout {
+	text-align: left;
+	list-style: none;
+}
+
+%image-large {
+	height: 400px;
+	width: 400px;
+}
+
+
+/*--- General Setup ---*/
+
+html,
+body {
+	font-family: 'Luckiest Guy', cursive;
+	text-transform: uppercase;
+	color: $white;
+	font-size: 20px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
+/*--- Pokemon Nav ---*/
+
+
+.nav-li {
+	display: inline-block;
+	margin: 40px 50px;
+	text-decoration: none;
+	font-size: 150%;
+}
+
+.nav-btn {
+	@extend %btn-focus;
+	cursor: pointer;
+	font-family: 'Luckiest Guy', cursive;
+	text-transform: uppercase;
+}
+
+.nav-btn-moltres:focus {
+	@extend %btn-focus;
+}
+
+.nav-btn-moltres:hover {
+    color: $light-yellow;
+    border: 4px solid $light-yellow;
+    background-color: rgba(162, 0, 33, 0.5);
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.nav-btn-suicune:focus {
+	@extend %btn-focus;
+}
+
+.nav-btn-suicune:hover {
+    color: $blue;
+    border: 4px solid $blue;
+    background-color: rgba(151, 119, 167, 0.5);
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.nav-btn-ho-oh:focus {
+	@extend %btn-focus;
+}
+
+.nav-btn-ho-oh:hover {
+    color: $red;
+    border: 4px solid $red;
+    background-color: rgba(243, 202, 64, 0.5);
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+
+/*--- Vertical Nav ---*/
+
+header {
+	height: 0;
+	width: 0;
+}
+
+@keyframes fadeIn{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+
+.vertical-nav {
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+.show {
+	display: flex;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	list-style: none;
+	background-color: transparent;
+	position: fixed;
+	margin: 260px 20px;
+	padding: 0;
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;	
+}
+
+.show img {
+	height: 60px;
+	width: 60px;
+}
+
+.show li {
+	margin-bottom: 60px;
+	list-style: none;
+}
+
+/*--- Trainer Section ---*/
+
+#trainer {
+	@extend %bg-image;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(gym.png);
+	
+}
+
+#trainer div h1 {
+	margin-bottom: 30px;
+	font-size: 400%;
+}
+
+#trainer div h2 {
+	font-size: 250%;
+	margin-bottom: 0px;
+}
+
+
+/*--- Moltres Section ---*/
+
+
+#moltres {
+	@extend %bg-image;
+	background-image: url(moltres.jpg);
+}
+
+.moltres-ul {
+	@extends %ul-layout;
+	border: 4px solid $dark-red;
+	border-radius: 10px;
+	color: $light-yellow;
+	font-size: 180%;
+	background-color: rgba(162, 0, 33, 0.5);
+}
+
+
+#moltres img {
+	padding-right: 30px;
+}
+
+.li-img {
+	text-align: center;
+}
+
+.moltres-ul li {
+	padding-left: 20px;
+}
+
+.moltres-name {
+	border-bottom: 4px solid $dark-red;
+}
+
+.moltres-abilities {
+	border-top: 4px solid $dark-red;
+	padding-top: 10px;
+}
+
+.inner-ul {
+	display: inline-block;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.moltres-ability-2 {
+	display: inline-block;
+}
+
+.moltres-ability-1 {
+	display: inline-block;
+}
+
+
+/*--- Suicune Section ---*/
+
+#suicune {
+	@extend %bg-image;
+	background: url(suicune.jpg);
+	
+}
+
+.suicune-ul {
+	@extends %ul-layout;
+	border: 4px solid $purple;
+	border-radius: 10px;
+	color: #blue;
+	font-size: 170%;
+	background-color: rgba(151, 119, 167, 0.5);
+}
+
+#suicune img {
+	@extends %image-large;
+	padding-top: 10px;
+}
+
+.suicune-ul li {
+	padding-left: 20px;
+}
+
+.suicune-name {
+	border-bottom: 4px solid $purple;
+}
+
+.suicune-abilities {
+	border-top: 4px solid $purple;
+	padding-top: 20px;
+}
+
+.suicune-ability-2 {
+	display: inline-block;
+}
+
+.suicune-ability-1 {
+	display: inline-block;
+}
+
+/*--- Ho-oh Section ---*/
+
+#ho-oh {
+	@extend %bg-image;
+	background: url(ho-oh.jpg);
+}
+
+.ho-oh-ul {
+	@extends %ul-layout;
+	border: 4px solid $bright-yellow;
+	border-radius: 10px;
+	color: $black;
+	font-size: 180%;
+	background-color: rgba(243, 202, 64, 0.5);
+}
+
+#ho-oh img {
+	@extends %image-large;
+	padding-top: 10px;
+}
+
+.ho-oh-ul li {
+	padding-left: 20px;
+}
+
+.ho-oh-name {
+	border-bottom: 4px solid $bright-yellow;
+}
+
+.ho-oh-abilities {
+	border-top: 4px solid $bright-yellow;
+	padding-top: 10px;
+}
+
+
+.ho-oh-ability-2 {
+	display: inline-block;
+}
+
+.ho-oh-ability-1 {
+	display: inline-block;
+}
+
+
+/* Small phones: from 0 to 480px */
+
+
+@media (max-width: 480px) {
+	body{
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav-li {
+	font-size: 60%;
+	margin: 30px;
+	}
+
+	#trainer div h1 {
+		font-size: 120%;
+	}
+
+	#trainer div h2 {
+		font-size: 110%;
+		
+	}
+
+	.moltres-ul {
+		font-size: 100%;
+	}
+
+	.suicune-ul {
+		font-size: 100%;
+	}
+
+	.ho-oh-ul {
+		font-size: 100%;
+	}
+
+}
