@@ -168,7 +168,7 @@ window.addEventListener("scroll", (event) => {
 	let showNav = document.querySelectorAll(".vertical-nav")
 	let scrollToShow = showNav[0]
 
-	if(window.scrollY > 900){
+	if(window.scrollY > 800){
 		scrollToShow.classList.add("show")
 	} else { 
 		scrollToShow.classList.remove("show")
@@ -176,9 +176,6 @@ window.addEventListener("scroll", (event) => {
 	}
 
 });
-
-
-
 
 
 document.querySelector(".nav-btn-moltres").addEventListener('click', (event) => {
@@ -215,7 +212,4 @@ document.querySelector(".vertical-ho-oh").addEventListener('click', (event) => {
 	let section = document.getElementById("ho-oh")
 	section.scrollIntoView({behavior: "smooth"});
 });
-
-
-
 

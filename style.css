@@ -159,7 +159,7 @@ header {
   @extends %ul-layout;
   border: 4px solid #8152A5;
   border-radius: 10px;
-  color: #blue;
+  color: #A4CEFF;
   font-size: 170%;
   background-color: rgba(151, 119, 167, 0.5); }
 
@@ -215,21 +215,20 @@ header {
 .ho-oh-ability-1 {
   display: inline-block; }
 
-/* Small phones: from 0 to 480px */
-@media (max-width: 480px) {
-  body {
-    padding: 0;
-    margin: 0; }
-
+/*--------------- Media Queries -----------------*/
+/* Big tablet to 1200px  */
+/* Small tablet to big tablet: from 768px to 1023px */
+/* Small phones to small tablets: from 481px to 767px */
+@media (max-width: 767px) {
   .nav-li {
-    font-size: 60%;
+    font-size: 70%;
     margin: 30px; }
 
   #trainer div h1 {
-    font-size: 120%; }
+    font-size: 130%; }
 
   #trainer div h2 {
-    font-size: 110%; }
+    font-size: 120%; }
 
   .moltres-ul {
     font-size: 100%; }
@@ -239,5 +238,36 @@ header {
 
   .ho-oh-ul {
     font-size: 100%; } }
+/* Small phones: from 0 to 480px */
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+    margin: 0; }
+
+  .nav-li {
+    font-size: 60%;
+    margin: 10px; }
+
+  #trainer div h1 {
+    font-size: 130%; }
+
+  #trainer div h2 {
+    font-size: 100%; }
+
+  .moltres-ul {
+    font-size: 100%; }
+
+  .suicune-ul {
+    font-size: 100%; }
+
+  .ho-oh-ul {
+    font-size: 100%; }
+
+  .show img {
+    height: 30px;
+    width: 30px; }
+
+  .show {
+    margin-left: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
