@@ -236,7 +236,7 @@ header {
 
 #suicune {
 	@extend %bg-image;
-	background: url(suicune.jpg);
+	background-image: url(suicune.jpg);
 	
 }
 
@@ -279,7 +279,7 @@ header {
 
 #ho-oh {
 	@extend %bg-image;
-	background: url(ho-oh.jpg);
+	background-image: url(ho-oh.jpg);
 }
 
 .ho-oh-ul {
