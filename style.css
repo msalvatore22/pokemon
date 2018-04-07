@@ -254,20 +254,24 @@ header {
   #trainer div h2 {
     font-size: 100%; }
 
+  #trainer div img {
+    height: 300px;
+    width: 150px; }
+
   .moltres-ul {
     font-size: 100%; }
 
   .suicune-ul {
-    font-size: 100%; }
+    font-size: 80%; }
 
   .ho-oh-ul {
-    font-size: 100%; }
+    font-size: 80%; }
 
   .show img {
     height: 30px;
     width: 30px; }
 
   .show {
-    margin-left: 5px; } }
+    margin: 120px 5px; } }
 
 /*# sourceMappingURL=style.css.map */
