@@ -18,6 +18,14 @@
   border-radius: 10px;
   padding: 15px 15px 10px 15px; }
 
+.moltres-ul, .suicune-ul, .ho-oh-ul {
+  text-align: left;
+  list-style: none; }
+
+#suicune img, #ho-oh img {
+  height: 400px;
+  width: 400px; }
+
 /*--- General Setup ---*/
 html,
 body {
@@ -102,7 +110,8 @@ header {
 
 /*--- Trainer Section ---*/
 #trainer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(gym.png); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(gym.png);
+  height: 100vh; }
 
 #trainer div h1 {
   margin-bottom: 30px;
@@ -117,7 +126,6 @@ header {
   background-image: url(moltres.jpg); }
 
 .moltres-ul {
-  @extends %ul-layout;
   border: 4px solid #A20021;
   border-radius: 10px;
   color: #FED766;
@@ -153,10 +161,10 @@ header {
 
 /*--- Suicune Section ---*/
 #suicune {
-  background: url(suicune.jpg); }
+  background-image: url(suicune.jpg);
+  background-attachment: fixed; }
 
 .suicune-ul {
-  @extends %ul-layout;
   border: 4px solid #8152A5;
   border-radius: 10px;
   color: #A4CEFF;
@@ -164,7 +172,6 @@ header {
   background-color: rgba(151, 119, 167, 0.5); }
 
 #suicune img {
-  @extends %image-large;
   padding-top: 10px; }
 
 .suicune-ul li {
@@ -185,10 +192,9 @@ header {
 
 /*--- Ho-oh Section ---*/
 #ho-oh {
-  background: url(ho-oh.jpg); }
+  background-image: url(ho-oh.jpg); }
 
 .ho-oh-ul {
-  @extends %ul-layout;
   border: 4px solid #F3CA40;
   border-radius: 10px;
   color: #2C2C2C;
@@ -196,7 +202,6 @@ header {
   background-color: rgba(243, 202, 64, 0.5); }
 
 #ho-oh img {
-  @extends %image-large;
   padding-top: 10px; }
 
 .ho-oh-ul li {

@@ -164,7 +164,7 @@ header {
 #trainer {
 	@extend %bg-image;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(gym.png);
-	
+	height: 100vh;
 }
 
 #trainer div h1 {
@@ -187,7 +187,7 @@ header {
 }
 
 .moltres-ul {
-	@extends %ul-layout;
+	@extend %ul-layout;
 	border: 4px solid $dark-red;
 	border-radius: 10px;
 	color: $light-yellow;
@@ -237,11 +237,11 @@ header {
 #suicune {
 	@extend %bg-image;
 	background-image: url(suicune.jpg);
-	
+	background-attachment: fixed;
 }
 
 .suicune-ul {
-	@extends %ul-layout;
+	@extend %ul-layout;
 	border: 4px solid $purple;
 	border-radius: 10px;
 	color: $blue;
@@ -250,7 +250,7 @@ header {
 }
 
 #suicune img {
-	@extends %image-large;
+	@extend %image-large;
 	padding-top: 10px;
 }
 
@@ -283,7 +283,7 @@ header {
 }
 
 .ho-oh-ul {
-	@extends %ul-layout;
+	@extend %ul-layout;
 	border: 4px solid $bright-yellow;
 	border-radius: 10px;
 	color: $black;
@@ -292,7 +292,7 @@ header {
 }
 
 #ho-oh img {
-	@extends %image-large;
+	@extend %image-large;
 	padding-top: 10px;
 }
 
